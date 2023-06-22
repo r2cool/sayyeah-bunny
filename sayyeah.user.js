@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Say Yeah Bunny Link Generator
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Say Yeah bunny
 // @author       Randy Rijkschroeff
 // @updateURL    https://github.com/r2cool/sayyeah-bunny/raw/main/sayyeah.user.js
