@@ -46,14 +46,15 @@
         });
     });
     if (window.onurlchange === null) {
-        // feature is supported
         window.addEventListener('urlchange', (info) => {
             waitForElm('[label="Video ID"] input').then((elm) => {
                 var copy_button = document.createElement('button');
                 copy_button.innerText = "Kopieer link";
                 copy_button.classList.add("mt-3", "bn-button", "bn-button--lg", "bn-button__item-style--primary");
                 copy_button.setAttribute('id','but1');
-                document.querySelectorAll('[label="Video ID"]')[0].append(copy_button);
+                if(document.getElementById('but1') == null){
+                    document.querySelectorAll('[label="Video ID"]')[0].append(copy_button);
+                }
                 copy_button.addEventListener("click", () => {
                     GM_setClipboard('https://video.sayyeah.nl/' + document.querySelectorAll('[label="Video ID"] input')[0].value);
                 });
