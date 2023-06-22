@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Say Yeah Bunny Link Generator
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Say Yeah bunny
 // @author       Randy Rijkschroeff
 // @updateURL    https://github.com/r2cool/sayyeah-bunny/raw/main/sayyeah.user.js
@@ -9,6 +9,7 @@
 // @match        https://dash.bunny.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bunny.net
 // @grant        GM_setClipboard
+// @grant        window.onurlchange
 // ==/UserScript==
 
 (function() {
