@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Say Yeah Bunny Link Generator
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @description  Say Yeah bunny
 // @author       Randy Rijkschroeff
 // @updateURL    https://github.com/r2cool/sayyeah-bunny/raw/main/sayyeah.user.js
@@ -17,6 +17,7 @@
     'use strict';
     GM_addStyle(`
         #but1 {
+            margin-top: 10px;
             display: inline-block;
             vertical-align: top;
             overflow: hidden;
